@@ -84,6 +84,7 @@ bool pop(Stack& s, int& nilai) {
         return false;
     } else {
         Node *hapus = s.top;
+        nilai = hapus->data;
         s.top=s.top->next;
         delete hapus;
         return true;
